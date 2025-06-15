@@ -47,6 +47,7 @@ dependencies {
 
 tasks.withType(Test) {
     useJUnitPlatform()
+    systemProperties(System.getProperties())
     systemProperty "file.encoding", "UTF-8"
 
     testLogging {
